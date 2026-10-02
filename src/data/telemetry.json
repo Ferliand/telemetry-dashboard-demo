@@ -1,0 +1,61 @@
+{
+  "site": "Field Site Demo — North Zone",
+  "generated_at": "2026-10-02T08:00:00+07:00",
+  "engines": [
+    {
+      "id": "ENG-001",
+      "name": "Pump Station Alpha",
+      "status": "running",
+      "running_hours": 4821.5,
+      "fuel_percent": 78,
+      "fuel_flow_lph": 12.4,
+      "rpm": 1450,
+      "temperature_c": 82,
+      "location": { "lat": -5.3512, "lng": 105.2411 },
+      "last_ping": "2026-10-02T07:59:41+07:00"
+    },
+    {
+      "id": "ENG-002",
+      "name": "Pump Station Beta",
+      "status": "running",
+      "running_hours": 3104.0,
+      "fuel_percent": 42,
+      "fuel_flow_lph": 11.8,
+      "rpm": 1420,
+      "temperature_c": 79,
+      "location": { "lat": -5.3604, "lng": 105.2533 },
+      "last_ping": "2026-10-02T07:59:52+07:00"
+    },
+    {
+      "id": "ENG-003",
+      "name": "Irrigation Gate 7",
+      "status": "idle",
+      "running_hours": 2210.3,
+      "fuel_percent": 91,
+      "fuel_flow_lph": 0,
+      "rpm": 0,
+      "temperature_c": 34,
+      "location": { "lat": -5.3712, "lng": 105.2302 },
+      "last_ping": "2026-10-02T07:58:10+07:00"
+    },
+    {
+      "id": "ENG-004",
+      "name": "Reservoir Unit Delta",
+      "status": "maintenance",
+      "running_hours": 5402.8,
+      "fuel_percent": 15,
+      "fuel_flow_lph": 0,
+      "rpm": 0,
+      "temperature_c": 31,
+      "location": { "lat": -5.3489, "lng": 105.2617 },
+      "last_ping": "2026-10-02T06:12:33+07:00"
+    }
+  ],
+  "telemetry_log": [
+    { "time": "07:59:52", "engine_id": "ENG-002", "event": "heartbeat", "detail": "rpm=1420 fuel=42%" },
+    { "time": "07:59:41", "engine_id": "ENG-001", "event": "heartbeat", "detail": "rpm=1450 fuel=78%" },
+    { "time": "07:58:10", "engine_id": "ENG-003", "event": "state_change", "detail": "running -> idle" },
+    { "time": "07:41:05", "engine_id": "ENG-001", "event": "fuel_alert", "detail": "consumption above 12 l/h threshold" },
+    { "time": "06:12:33", "engine_id": "ENG-004", "event": "state_change", "detail": "idle -> maintenance" }
+  ]
+}
